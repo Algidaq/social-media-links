@@ -4,6 +4,13 @@
   font-weight: 400 600 700;
 }
 
+ul,
+li,
+a {
+  all: unset;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-green: hsl(75, 94%, 57%);
   --grey-color: hsl(0, 0%, 20%);
@@ -86,21 +93,18 @@ main {
 
 .name-location .name {
   color: var(--white-color);
+  line-height: 150%;
 }
 
 .name-location .location {
   color: var(--primary-green);
+  line-height: 150%;
 }
 
 .profile-card .bio {
   color: white;
   text-align: center;
-}
-
-ul,
-li,
-a {
-  all: unset;
+  line-height: 150%;
 }
 
 .links {
@@ -109,18 +113,17 @@ a {
   gap: 16px;
 }
 
-.links li {
+.links > li {
   background-color: var(--grey-color);
   padding: 12px;
   cursor: pointer;
   border-radius: 8px;
   transition: background 300ms linear;
+  height: 45px;
 }
 
-.links li a {
+.links li > a {
   display: block;
-  width: 100%;
-  height: 100%;
   text-align: center;
   color: white;
   transition: color 300ms linear;
